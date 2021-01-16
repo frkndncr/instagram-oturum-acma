@@ -1,8 +1,11 @@
-from instagramUserInfo import username, password
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys 
 import time
 
+
+username = input("Kullanıcı Adı: ")
+
+password = input("Şifrenizi Giriniz: ")
 class Instagram:
     def __init__(self,username,password):
         self.browser = webdriver.Chrome()
